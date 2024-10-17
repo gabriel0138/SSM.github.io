@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sistema de Segurança e Monitoramento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Sistema de Segurança e Monitoramento</h1>
+        <p>Projeto de TCC sobre controle de acesso usando RFID, Reconhecimento Facial, Biometria e Arduino</p>
+        <img src="img/WhatsApp Image 2024-10-16 at 19.42.39.jpeg" alt="Imagem de Segurança" class="header-img">
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#rfid">Sensores RFID</a></li>
+            <li><a href="#reconhecimento-facial">Reconhecimento Facial</a></li>
+            <li><a href="#biometria">Leitores Biométricos</a></li>
+            <li><a href="#arduino">Código Arduino</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção RFID -->
+    <section id="rfid">
+        <h2>Sensores RFID</h2>
+        <p>Os sensores RFID são dispositivos usados para identificar e rastrear automaticamente objetos e pessoas usando sinais de rádio. No sistema de segurança, eles permitem a identificação rápida e segura de usuários autorizados.</p>
+        <img src="img/OIP.jpg" alt="Imagem de Sensor RFID" class="topic-img">
+    </section>
+
+    <!-- Seção Reconhecimento Facial -->
+    <section id="reconhecimento-facial">
+        <h2>Reconhecimento Facial</h2>
+        <p>O sistema de segurança também integra o reconhecimento facial, permitindo que o acesso seja liberado apenas para usuários cuja face está cadastrada no sistema. Essa tecnologia oferece uma camada adicional de segurança, evitando fraudes e melhorando a experiência do usuário.</p>
+        <p>Com o uso de algoritmos avançados, o sistema analisa os pontos faciais para identificar o indivíduo e garantir que o acesso seja permitido apenas para pessoas autorizadas.</p>
+        <div class="foto-container">
+            <img src="img/FAJ6JNHGVZP1H4L.webp" alt="Exemplo de Reconhecimento Facial" class="foto-explicativa">
+        </div>
+    </section>
+
+    <!-- Seção Biometria -->
+    <section id="biometria">
+        <h2>Leitores Biométricos</h2>
+        <p>Os leitores biométricos são sensores que capturam características físicas, como impressões digitais, para conceder acesso seguro e personalizado a áreas restritas.</p>
+        <img src="img/OIP.jpg" alt="Imagem de Leitor Biométrico" class="topic-img">
+    </section>
+
+    <!-- Seção Código Arduino com abas -->
+    <section id="arduino">
+        <h2>Código Arduino</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RFIDCode')">Código RFID</button>
+            <button class="tablinks" onclick="openTab(event, 'FacialCode')">Código Reconhecimento Facial</button>
+            <button class="tablinks" onclick="openTab(event, 'BiometriaCode')">Código Biometria</button>
+        </div>
+
+        <!-- Conteúdo das Abas -->
+        <div id="RFIDCode" class="tabcontent">
+            <h3>Leitura de RFID</h3>
+            <p>O código de leitura RFID no Arduino utiliza a biblioteca <code>MFRC522</code> para identificar as tags RFID. Quando a tag é lida, o Arduino compara o número único da tag com a lista de usuários autorizados.</p>
+            <img src="img/Captura de Tela (7) 1.png" alt="Imagem de Código RFID" class="topic-img">
+        </div>
+
+        <div id="FacialCode" class="tabcontent">
+            <h3>Controle de Acesso com Reconhecimento Facial</h3>
+            <p>O sistema de reconhecimento facial, ao identificar uma correspondência, envia um comando para um relé que controla a abertura da porta. Se o rosto não for reconhecido, um alerta pode ser disparado, garantindo maior segurança.</p>
+            <img src="img/Captura de Tela (18) 1.png" alt="Imagem do Código de Reconhecimento Facial" class="topic-img">
+        </div>
+
+        <div id="BiometriaCode" class="tabcontent">
+            <h3>Biometria (Leitor de Impressão Digital)</h3>
+            <p>Para o módulo de impressão digital, o Arduino utiliza a biblioteca <code>Adafruit Fingerprint</code>, que verifica a digital armazenada e envia um comando para liberar o acesso caso haja uma correspondência.</p>
+            <img src="img/Captura de Tela (9) 1.png" alt="Imagem de Código Biometria" class="topic-img">
+        </div>
+    </section>
+
+    <!-- Seção Conclusão -->
+    <section id="conclusao">
+        <h2>Conclusão</h2>
+        <p>Somos o grupo SSM "Sistema de Segurança e Monitoramento", uma turma de Desenvolvimento de Sistemas 3 "DSI3". O sistema de segurança e monitoramento desenvolvido para este TCC integra as tecnologias RFID, reconhecimento facial, biometria e Arduino, proporcionando um controle de acesso eficaz e seguro.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; SSM - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
